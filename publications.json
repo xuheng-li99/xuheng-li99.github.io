@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Mirror Diffusion Models for Mixed-Type EHR Time Series Generation",
+        "authors": "Xuheng Li, Shiyuan Zhang, Melika Emami, Mohit Yadav, Jun Han, Robert E. Tillman, Quanquan Gu",
+        "type": "preprint",
+        "year": "2026"
+    },
+    {
+        "title": "Dimension-Independent Convergence of Underdamped Langevin Monte Carlo in KL Divergence",
+        "authors": "Shiyuan Zhang*, Qiwei Di*, Xuheng Li*, Quanquan Gu",
+        "type": "preprint",
+        "year": 2026,
+        "arxiv": "https://arxiv.org/abs/2603.02429"
+    },
+    {
+        "title": "Best-of-Majority: Minimax-Optimal Strategy for Pass@$k$ Inference Scaling",
+        "authors": "Qiwei Di*, Kaixuan Ji*, Xuheng Li*, Heyang Zhao, Quanquan Gu",
+        "type": "conference",
+        "year": 2026,
+        "conference_name": "the 14th International Conference on Learning Representations (ICLR)",
+        "url": "https://openreview.net/pdf?id=a6CVQpjbXq",
+        "conference_location": "Rio de Janeiro, Brazil",
+        "arxiv": "https://arxiv.org/abs/2510.03199"
+    },
+    {
+        "title": "Variance-Aware Feel-Good Thompson Sampling for Contextual Bandits",
+        "authors": "Xuheng Li, Quanquan Gu",
+        "type": "conference",
+        "year": 2025,
+        "conference_name": "Advances in Neural Information Processing Systems (NeurIPS) 38",
+        "url": "https://openreview.net/pdf?id=eGpI9rz1Pw",
+        "conference_location": "San Diego, California, USA",
+        "arxiv": "https://arxiv.org/abs/2511.02123"
+    },
+    {
+        "title": "Understanding SGD with Exponential Moving Average: A Case Study in Linear Regression",
+        "authors": "Xuheng Li, Quanquan Gu",
+        "type": "preprint",
+        "year": 2025,
+        "arxiv": "https://arxiv.org/abs/2502.14123"
+    },
+    {
+        "title": "Feel-Good Thompson Sampling for Contextual Dueling Bandits",
+        "authors": "Xuheng Li, Heyang Zhao, Quanquan Gu",
+        "type": "conference",
+        "year": 2024,
+        "conference_name": "the 41st International Conference on Machine Learning (ICML)",
+        "url": "https://openreview.net/pdf?id=eGpI9rz1Pw",
+        "conference_location": "Vienna, Austria",
+        "arxiv": "https://arxiv.org/abs/2404.06013"
+    },
+    {
+        "title": "Risk Bounds of Accelerated SGD for Overparameterized Linear Regression",
+        "authors": "Xuheng Li, Yihe Deng, Jingfeng Wu, Dongruo Zhou, Quanquan Gu",
+        "type": "conference",
+        "year": 2024,
+        "conference_name": "the 12th International Conference on Learning Representations (ICLR)",
+        "url": "https://openreview.net/pdf?id=AcoXPIPh4A",
+        "conference_location": "Vienna, Austria",
+        "arxiv": "https://arxiv.org/abs/2311.14222"
+    }
+]
