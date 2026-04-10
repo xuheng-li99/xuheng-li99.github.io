@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications · Xuheng Li</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Xuheng Li</a>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publication.html" class="active">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Main ───────────────────────────────────────────────── -->
+  <main>
+    <div class="container">
+
+      <h2 class="section-title">Publications</h2>
+      <p style="font-size:0.9rem; color:#555; margin-bottom:2rem;">
+        * denotes equal contribution.
+      </p>
+
+      <div id="pub-container">
+        <p style="color:#888;">Loading publications…</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      © 2026 Xuheng Li · Last updated April 2026
+    </div>
+  </footer>
+
+  <!-- ── Render publications from JSON ──────────────────────── -->
+  <script>
+    const SELF = "Xuheng Li";
+
+    function boldSelf(authorsStr) {
+      // Wrap the author's own name in <strong>, leaving asterisks intact
+      return authorsStr.replace(
+        new RegExp(`(${SELF})(\\*?)`, "g"),
+        "<strong>$1</strong>$2"
+      );
+    }
+
+    function buildVenue(pub) {
+      if (pub.type === "conference" && pub.conference_name) {
+        let v = `In Proc. of ${pub.conference_name}`;
+        if (pub.conference_location) v += ` · ${pub.conference_location}`;
+        return v;
+      }
+      return "";
+    }
+
+    function buildItem(pub) {
+      const titleLink = pub.url
+        ? `<a href="${pub.url}" target="_blank">${pub.title}</a>`
+        : pub.arxiv
+          ? `<a href="${pub.arxiv}" target="_blank">${pub.title}</a>`
+          : pub.title;
+
+      const venue = buildVenue(pub);
+
+      const badges = [];
+      if (pub.arxiv) {
+        badges.push(`<a class="badge badge-arxiv" href="${pub.arxiv}" target="_blank">arXiv</a>`);
+      }
+      if (pub.url) {
+        badges.push(`<a class="badge badge-paper" href="${pub.url}" target="_blank">openreview</a>`);
+      }
+
+      return `
+        <li class="pub-item">
+          <div class="pub-title">${titleLink}</div>
+          <div class="pub-authors">${boldSelf(pub.authors)}</div>
+          ${venue ? `<div class="pub-venue">${venue}</div>` : ""}
+          ${badges.length ? `<div class="pub-badges">${badges.join("")}</div>` : ""}
+        </li>`;
+    }
+
+    fetch("publications.json")
+      .then(r => r.json())
+      .then(pubs => {
+        const container = document.getElementById("pub-container");
+        container.innerHTML = `
+          <ul class="pub-list">
+            ${pubs.map(buildItem).join("")}
+          </ul>`;
+      })
+      .catch(() => {
+        document.getElementById("pub-container").innerHTML =
+          "<p style='color:#c00;'>Failed to load publications.</p>";
+      });
+  </script>
+
+</body>
+</html>
