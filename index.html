@@ -11,11 +11,12 @@
   <!-- ── Navigation ─────────────────────────────────────────── -->
   <nav>
     <div class="nav-inner">
-      <a class="nav-brand" href="index.html">Xuheng Li</a>
+      <a class="nav-brand" href="#about">Xuheng Li</a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">About</a></li>
-        <li><a href="publication.html">Publications</a></li>
-        <li><a href="research.html">Research</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#research">Research</a></li>
       </ul>
     </div>
   </nav>
@@ -25,72 +26,144 @@
     <div class="container">
 
       <!-- Profile -->
-      <div class="profile">
-        <img class="profile-photo" src="img/xuheng.jpeg" alt="Xuheng Li" />
-        <div class="profile-info">
-          <h1>Xuheng Li</h1>
-          <p class="profile-meta">
-            <!-- TODO: e.g. "Ph.D. Student · Department of Computer Science · University of California, Los Angeles" -->
-            PhD Candidate · Department of Computer Science · University of California, Los Angeles
-          </p>
+      <section id="about">
+        <div class="profile">
+          <img class="profile-photo" src="img/xuheng.jpeg" alt="Xuheng Li" />
+          <div class="profile-info">
+            <h1>Xuheng Li</h1>
+            <p class="profile-meta">
+              PhD Candidate · Department of Computer Science · University of California, Los Angeles
+            </p>
 
-          <p class="profile-meta">Email: [FIRST] [dot] [LAST] [at] cs [dot] ucla [dot] edu</p>
+            <p class="profile-meta">Email: [FIRST] [dot] [LAST] [at] cs [dot] ucla [dot] edu</p>
 
-          <div class="profile-links">
-            <a class="btn-link" href="CV.pdf" target="_blank">CV</a>
-            <a class="btn-link" href="https://scholar.google.com/citations?user=BikRqnIAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            <a class="btn-link" href="https://x.com/xuhengli_" target="_blank">X</a>
-            <a class="btn-link" href="https://github.com/xuheng-li99" target="_blank">GitHub</a>
-            <!-- Add more links as needed, e.g. Twitter/X, LinkedIn, Semantic Scholar -->
+            <div class="profile-links">
+              <a class="btn-link" href="CV.pdf" target="_blank">CV</a>
+              <a class="btn-link" href="https://scholar.google.com/citations?user=BikRqnIAAAAJ&hl=en" target="_blank">Google Scholar</a>
+              <a class="btn-link" href="https://x.com/xuhengli_" target="_blank">X</a>
+              <a class="btn-link" href="https://github.com/xuheng-li99" target="_blank">GitHub</a>
+            </div>
+
+            <p>
+              I am a Ph.D. student of the <a href="https://www.uclaml.org/">AGI Lab</a> in the <a href="https://www.cs.ucla.edu/">Department of Computer Science</a> at the <a href="https://www.ucla.edu/">University of California, Los Angeles</a>, advised by
+              <a href="https://web.cs.ucla.edu/~qgu/">Prof. Quanquan Gu</a>.
+              I received my B.Sc. at the <a href="https://www.math.pku.edu.cn/">School of Mathematical Sciences</a> at <a href="https://www.pku.edu.cn/">Peking University</a>.
+            </p>
+            <p>
+              My research focuses on optimization and RL applied to the pre-training and post-training of LLMs. I am also interested in sampling based-methods, including the diffusion models and their applications.
+              I am fascinated with in how the dynamics of high-dimensional models are shaped by the low-dimensional structure of the data and training algorithms.
+            </p>
           </div>
-
-          <p>
-            <!-- TODO: 2–3 sentence bio. Example: -->
-            I am a Ph.D. student of the <a href="https://www.uclaml.org/">AGI Lab</a> in the <a href="https://www.cs.ucla.edu/">Department of Computer Science</a> at the <a href="https://www.ucla.edu/">University of California, Los Angeles</a>, advised by
-            <a href="https://web.cs.ucla.edu/~qgu/">Prof. Quanquan Gu</a>.
-            I received my B.Sc. at the <a href="https://www.math.pku.edu.cn/">School of Mathematical Sciences</a> at <a href="https://www.pku.edu.cn/">Peking University</a>.
-          </p>
-          <p>
-            My research focuses on optimization and RL applied to the pre-training and post-training of LLMs. I am also interested in sampling based-methods, including the diffusion models and their applications.
-            I am fascinated with in how the dynamics of high-dimensional models are shaped by the low-dimensional structure of the data and training algorithms.
-          </p>
         </div>
-      </div>
+      </section>
 
       <!-- News -->
-      <section>
+      <section id="news">
         <h2 class="section-title">News</h2>
-        <ul class="news-list">
-          <li>
-            <span class="news-date">Apr 2026</span>
-            <div>
+        <div class="section-body">
+          <ul class="news-list">
+            <li>
+              <span class="news-date">Apr 2026</span>
+              <div class="news-body">
+                <p>
+                  Heading to <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a> in Rio de Janeiro!
+                  I will be presenting two works:
+                </p>
+                <ul style="margin: 0.4rem 0 0 1.2rem; font-size: 0.95rem;">
+                  <li>
+                    <a href="https://openreview.net/pdf?id=a6CVQpjbXq">Best-of-Majority: Minimax-Optimal Strategy for Pass@<em>k</em> Inference Scaling</a>
+                    <br><span class="news-submeta">Main conference, poster session 2 · Poster P4-#4306 · Afternoon of April 23</span>
+                  </li>
+                  <li style="margin-top: 0.5rem;">
+                    <a href="https://arxiv.org/abs/2603.02429">Dimension-Independent Convergence of Underdamped Langevin Monte Carlo in KL Divergence</a>
+                    <br><span class="news-submeta"><a href="https://delta-workshop.github.io/DeLTa2026/">DeLTa 2026 Workshop</a></span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span class="news-date">Mar 2026</span>
+              <div class="news-body">
+                <p>We just launched <a href="https://eurekaclaw.ai">EurekaClaw</a>, an AI research agent that captures your Eureka moments!</p>
+                <a class="news-link-card" href="https://twitter.com/EurekaClaw/status/2039496861103673608" target="_blank">
+                  <span class="news-link-head">
+                    <span class="news-link-branding">
+                      <img class="news-brand-eureka-logo" src="img/EurekaClaw.jpg" alt="" />
+                      <span class="news-link-source">EurekaClaw</span>
+                      <span class="news-brand news-brand-x" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                          <path d="M18.244 2H21l-6.56 7.5L22 22h-6.11l-4.78-6.26L5.63 22H2.87l7.02-8.02L2 2h6.27l4.32 5.71L18.244 2Zm-1.07 18h1.69L7.35 3.9H5.54L17.17 20Z"></path>
+                        </svg>
+                      </span>
+                    </span>
+                    <span class="news-link-date">March 22, 2026</span>
+                  </span>
+                  <span class="news-link-copy">Just dropped: watch EurekaClaw go from zero → full research paper.</span>
+                  <span class="news-link-copy news-link-copy-secondary">Then it goes fully autonomous: literature → ideas → <span class="news-link-more">Show more</span></span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications">
+        <h2 class="section-title">Publications</h2>
+        <div class="section-body">
+          <p style="font-size:0.9rem; color:#555; margin-bottom:2rem;">
+            * denotes equal contribution.
+          </p>
+
+          <div id="pub-container">
+            <p style="color:#888;">Loading publications…</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section id="research">
+        <h2 class="section-title">Research</h2>
+        <div class="section-body">
+          <div class="research-grid">
+
+            <div class="research-card">
+              <h3>Optimization in High Dimensions</h3>
               <p>
-                Heading to <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a> in Rio de Janeiro!
-                I will be presenting two works:
+                Modern machine learning models are trained on high-dimensional loss landscapes whose behavior is far from well understood. I study how stochastic optimization algorithms interact with the intrinsic low-dimensional structure of data.
               </p>
-              <ul style="margin: 0.4rem 0 0 1.2rem; font-size: 0.95rem;">
-                <li>
-                  <a href="https://openreview.net/pdf?id=a6CVQpjbXq">Best-of-Majority: Minimax-Optimal Strategy for Pass@<em>k</em> Inference Scaling</a>
-                  <br><span style="color:#555; font-size:0.88rem;">Main conference, poster session 2 · Poster P4-#4306 · Afternoon of April 23</span>
-                </li>
-                <li style="margin-top: 0.5rem;">
-                  <a href="https://arxiv.org/abs/2603.02429">Dimension-Independent Convergence of Underdamped Langevin Monte Carlo in KL Divergence</a>
-                  <br><span style="color:#555; font-size:0.88rem;"><a href="https://delta-workshop.github.io/DeLTa2026/">DeLTa 2026 Workshop</a></span>
-                </li>
-              </ul>
             </div>
-          </li>
-          <li>
-            <span class="news-date">Mar 2026</span>
-            <div>
-              <p>We just launched <a href="https://eurekaclaw.ai">EurekaClaw</a>, an AI research agent that captures your Eureka moments!</p>
-              <blockquote class="twitter-tweet">
-                <p lang="en" dir="ltr">1/n 🦞 Introducing EurekaClaw💡 — a local-first AI research agent that captures your Eureka moments before they vanish. From idea → proof → experiment → paper — fully automated. Local-first. Zero data leak. 🔒</p>
-                &mdash; EurekaClaw (@EurekaClaw) <a href="https://twitter.com/EurekaClaw/status/2039496861103673608">March 22, 2026</a>
-              </blockquote>
+
+            <div class="research-card">
+              <h3>Sampling and Diffusion Models</h3>
+              <p>
+                Score-based generative models and Markov chain Monte Carlo samplers share a deep connection through stochastic differential equations. I work on the theoretical foundations of sampling algorithms, and on applying diffusion models to structured domains such as mixed-type electronic health records.
+              </p>
             </div>
-          </li>
-        </ul>
+
+            <div class="research-card">
+              <h3>RL in Post-Training and Reasoning of LLMs</h3>
+              <p>
+                Reinforcement learning from human feedback and inference-time scaling are central to aligning and eliciting reasoning in large language models. I develop principled algorithms and statistical frameworks for contextual bandits and inference strategies.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="more-about-me" class="more-about-section">
+        <h2 class="section-title">A Little More About Me</h2>
+        <div class="section-body">
+          <p>
+            Beyond research, hiking and stargazing are two of my favorite activities in life.
+            Trying to make the most of a finite life in the vastness of nature and the universe.
+          </p>
+          <blockquote class="epigraph">
+            <p>"Look again at that dot. That's here. That's home. That's us."</p>
+            <cite>Carl Sagan</cite>
+          </blockquote>
+        </div>
       </section>
     </div>
   </main>
@@ -102,7 +175,73 @@
     </div>
   </footer>
 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+    const SELF = "Xuheng Li";
+
+    function boldSelf(authorsStr) {
+      return authorsStr.replace(
+        new RegExp(`(${SELF})(\\*?)`, "g"),
+        "<strong>$1</strong>$2"
+      );
+    }
+
+    function buildVenue(pub) {
+      if (pub.type === "conference" && pub.conference_name) {
+        let v = `In Proc. of ${pub.conference_name}`;
+        if (pub.conference_location) v += ` · ${pub.conference_location}`;
+        return v;
+      }
+      return "";
+    }
+
+    function buildItem(pub) {
+      const titleLink = pub.url
+        ? `<a href="${pub.url}" target="_blank">${pub.title}</a>`
+        : pub.arxiv
+          ? `<a href="${pub.arxiv}" target="_blank">${pub.title}</a>`
+          : pub.title;
+
+      const venue = buildVenue(pub);
+      const paperUrl = pub.url || pub.arxiv || "";
+
+      const badges = [];
+      if (pub.arxiv) {
+        badges.push(`<a class="badge badge-arxiv" href="${pub.arxiv}" target="_blank">arXiv</a>`);
+      }
+      if (pub.url) {
+        badges.push(`<a class="badge badge-paper" href="${pub.url}" target="_blank">openreview</a>`);
+      }
+
+      const thumb = pub.image
+        ? `<a class="pub-thumb pub-thumb-image" href="${paperUrl}" target="_blank" aria-label="Open paper for ${pub.title}"><img src="${pub.image}" alt="Preview image for ${pub.title}" /></a>`
+        : `<div class="pub-thumb pub-thumb-static" aria-hidden="true"><span>Paper to be released</span></div>`;
+
+      return `
+        <li class="pub-item">
+          ${thumb}
+          <div class="pub-content">
+            <div class="pub-title">${titleLink}</div>
+            <div class="pub-authors">${boldSelf(pub.authors)}</div>
+            ${venue ? `<div class="pub-venue">${venue}</div>` : ""}
+            ${badges.length ? `<div class="pub-badges">${badges.join("")}</div>` : ""}
+          </div>
+        </li>`;
+    }
+
+    fetch("publications.json")
+      .then(r => r.json())
+      .then(pubs => {
+        const container = document.getElementById("pub-container");
+        container.innerHTML = `
+          <ul class="pub-list">
+            ${pubs.map(buildItem).join("")}
+          </ul>`;
+      })
+      .catch(() => {
+        document.getElementById("pub-container").innerHTML =
+          "<p style='color:#c00;'>Failed to load publications.</p>";
+      });
+  </script>
 
 </body>
 </html>

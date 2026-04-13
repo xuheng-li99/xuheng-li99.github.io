@@ -10,7 +10,8 @@
         "authors": "Shiyuan Zhang*, Qiwei Di*, Xuheng Li*, Quanquan Gu",
         "type": "preprint",
         "year": 2026,
-        "arxiv": "https://arxiv.org/abs/2603.02429"
+        "arxiv": "https://arxiv.org/abs/2603.02429",
+        "image": "img/Dimension-Independent.png"
     },
     {
         "title": "Best-of-Majority: Minimax-Optimal Strategy for Pass@$k$ Inference Scaling",
@@ -20,7 +21,8 @@
         "conference_name": "the 14th International Conference on Learning Representations (ICLR)",
         "url": "https://openreview.net/pdf?id=a6CVQpjbXq",
         "conference_location": "Rio de Janeiro, Brazil",
-        "arxiv": "https://arxiv.org/abs/2510.03199"
+        "arxiv": "https://arxiv.org/abs/2510.03199",
+        "image": "img/Best-of-Majority.png"
     },
     {
         "title": "Variance-Aware Feel-Good Thompson Sampling for Contextual Bandits",
@@ -30,14 +32,16 @@
         "conference_name": "Advances in Neural Information Processing Systems (NeurIPS) 38",
         "url": "https://openreview.net/pdf?id=eGpI9rz1Pw",
         "conference_location": "San Diego, California, USA",
-        "arxiv": "https://arxiv.org/abs/2511.02123"
+        "arxiv": "https://arxiv.org/abs/2511.02123",
+        "image": "img/Variance-Aware Feel-Good.png"
     },
     {
         "title": "Understanding SGD with Exponential Moving Average: A Case Study in Linear Regression",
         "authors": "Xuheng Li, Quanquan Gu",
         "type": "preprint",
         "year": 2025,
-        "arxiv": "https://arxiv.org/abs/2502.14123"
+        "arxiv": "https://arxiv.org/abs/2502.14123",
+        "image": "img/Understanding SGD.png"
     },
     {
         "title": "Feel-Good Thompson Sampling for Contextual Dueling Bandits",
@@ -47,7 +51,8 @@
         "conference_name": "the 41st International Conference on Machine Learning (ICML)",
         "url": "https://openreview.net/pdf?id=eGpI9rz1Pw",
         "conference_location": "Vienna, Austria",
-        "arxiv": "https://arxiv.org/abs/2404.06013"
+        "arxiv": "https://arxiv.org/abs/2404.06013",
+        "image": "img/Feel-Good Thompson.png"
     },
     {
         "title": "Risk Bounds of Accelerated SGD for Overparameterized Linear Regression",
@@ -57,6 +62,7 @@
         "conference_name": "the 12th International Conference on Learning Representations (ICLR)",
         "url": "https://openreview.net/pdf?id=AcoXPIPh4A",
         "conference_location": "Vienna, Austria",
-        "arxiv": "https://arxiv.org/abs/2311.14222"
+        "arxiv": "https://arxiv.org/abs/2311.14222",
+        "image": "img/Risk Bounds of Accelerated SGD.png"
     }
 ]
