@@ -502,7 +502,10 @@ section {
 
 .badge-conf     { background: var(--color-block-dark);  color: #ffffff; }
 .badge-preprint { background: #e0e0e0;                  color: #333333; }
-.badge-arxiv    { background: var(--color-emphasis);    color: var(--color-text); }
+.badge-arxiv {
+  background: #e8b5ab;
+  color: #4b3732;
+}
 .badge-paper    { background: var(--color-block-light); color: var(--color-text); }
 
 /* =====================================================
