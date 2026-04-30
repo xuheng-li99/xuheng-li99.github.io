@@ -8,8 +8,10 @@
     {
         "title": "Dimension-Independent Convergence of Underdamped Langevin Monte Carlo in KL Divergence",
         "authors": "Shiyuan Zhang*, Qiwei Di*, Xuheng Li*, Quanquan Gu",
-        "type": "preprint",
+        "type": "conference",
         "year": 2026,
+        "conference_name": "the 43rd International Conference on Machine Learning (ICML)",
+        "conference_location": "Seoul, South Korea",
         "arxiv": "https://arxiv.org/abs/2603.02429",
         "image": "img/Dimension-Independent.png"
     },
