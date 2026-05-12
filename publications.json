@@ -1,5 +1,11 @@
 [
     {
+        "title": "Saturation-Insensitive Dueling Bandits with General Function Approximation",
+        "authors": "Chenggong Zhang, Xuheng Li, Qiwei Di, Weitong Zhang, Quanquan Gu",
+        "type": "preprint",
+        "year": 2026
+    },
+    {
         "title": "Mirror Diffusion Models for Mixed-Type EHR Time Series Generation",
         "authors": "Xuheng Li, Shiyuan Zhang, Melika Emami, Mohit Yadav, Jun Han, Robert E. Tillman, Quanquan Gu",
         "type": "preprint",
