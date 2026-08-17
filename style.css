@@ -13,7 +13,7 @@
                Helvetica, Arial, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
-  --max-width:  900px;
+  --max-width:  1180px;
   --nav-height: 60px;
 
   --sp-xs: 0.4rem;
@@ -140,7 +140,10 @@ section {
 #publications,
 #research,
 #more-about-me {
-  margin-left: 0.7rem;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  column-gap: 1.6rem;
+  align-items: start;
 }
 
 #more-about-me {
@@ -150,13 +153,29 @@ section {
 .section-title {
   font-size: 1.35rem;
   font-weight: 700;
-  padding-bottom: var(--sp-xs);
-  border-bottom: 2px solid var(--color-block-dark);
+  position: relative;
+  padding: 0 0 var(--sp-xs) 1.75rem;
+  border: 0;
   margin-bottom: var(--sp-md);
+  transition: color 0.15s, transform 0.15s;
+}
+
+.section-emoji {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#news:hover .section-title,
+#publications:hover .section-title,
+#research:hover .section-title,
+#more-about-me:hover .section-title {
+  color: var(--color-emphasis);
+  transform: translateX(4px);
 }
 
 .section-body {
-  margin-left: 1rem;
+  min-width: 0;
 }
 
 /* =====================================================
@@ -245,14 +264,24 @@ section {
    ===================================================== */
 .news-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
 }
 
 .news-list li {
   display: flex;
   gap: var(--sp-md);
-  padding: var(--sp-sm) 0;
-  border-bottom: 1px solid var(--color-block-light);
+  padding: var(--sp-md);
+  border-left: 4px solid var(--color-block-light);
+  background: #fafafa;
   font-size: 0.95rem;
+  transition: border-left-color 0.15s, background 0.15s;
+}
+
+.news-list li:hover {
+  border-left-color: var(--color-block-dark);
+  background: #f2fdf8;
 }
 
 .news-date {
@@ -418,8 +447,8 @@ section {
 }
 
 .pub-thumb {
-  width: 168px;
-  min-width: 168px;
+  width: 220px;
+  min-width: 220px;
   display: block;
   color: #314150;
   font-size: 0.78rem;
@@ -518,9 +547,15 @@ section {
 }
 
 .research-card {
-  padding: 1rem 0.9rem;
-  border-top: 4px solid var(--color-block-dark);
-  background: var(--color-block-light);
+  padding: var(--sp-md);
+  border-left: 4px solid var(--color-block-light);
+  background: #fafafa;
+  transition: border-left-color 0.15s, background 0.15s;
+}
+
+.research-card:hover {
+  border-left-color: var(--color-block-dark);
+  background: #f2fdf8;
 }
 
 .research-card h3 {
@@ -560,11 +595,15 @@ footer {
   #publications,
   #research,
   #more-about-me {
-    margin-left: 0;
+    display: block;
+  }
+
+  .section-title {
+    padding: 0 0 var(--sp-xs);
   }
 
   .section-body {
-    margin-left: 0.5rem;
+    margin-left: 0;
   }
 
   .profile {
@@ -591,8 +630,8 @@ footer {
   }
 
   .pub-thumb {
-    width: 140px;
-    min-width: 140px;
+    width: 170px;
+    min-width: 170px;
   }
 
   .research-grid {
