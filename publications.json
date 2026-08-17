@@ -18,6 +18,8 @@
         "year": 2026,
         "conference_name": "the 43rd International Conference on Machine Learning (ICML)",
         "conference_location": "Seoul, South Korea",
+        "pdf": "https://openreview.net/pdf?id=gxxOL0iXpr",
+        "openreview": "https://openreview.net/forum?id=gxxOL0iXpr",
         "arxiv": "https://arxiv.org/abs/2603.02429",
         "image": "img/Dimension-Independent.png"
     },
@@ -27,7 +29,8 @@
         "type": "conference",
         "year": 2026,
         "conference_name": "the 14th International Conference on Learning Representations (ICLR)",
-        "url": "https://openreview.net/pdf?id=a6CVQpjbXq",
+        "pdf": "https://openreview.net/pdf?id=a6CVQpjbXq",
+        "openreview": "https://openreview.net/forum?id=a6CVQpjbXq",
         "conference_location": "Rio de Janeiro, Brazil",
         "arxiv": "https://arxiv.org/abs/2510.03199",
         "image": "img/Best-of-Majority.png"
@@ -38,7 +41,8 @@
         "type": "conference",
         "year": 2025,
         "conference_name": "Advances in Neural Information Processing Systems (NeurIPS) 38",
-        "url": "https://openreview.net/pdf?id=eGpI9rz1Pw",
+        "pdf": "https://openreview.net/pdf?id=eGpI9rz1Pw",
+        "openreview": "https://openreview.net/forum?id=eGpI9rz1Pw",
         "conference_location": "San Diego, California, USA",
         "arxiv": "https://arxiv.org/abs/2511.02123",
         "image": "img/Variance-Aware Feel-Good.png"
@@ -48,6 +52,7 @@
         "authors": "Xuheng Li, Quanquan Gu",
         "type": "preprint",
         "year": 2025,
+        "pdf": "https://arxiv.org/pdf/2502.14123",
         "arxiv": "https://arxiv.org/abs/2502.14123",
         "image": "img/Understanding SGD.png"
     },
@@ -57,7 +62,8 @@
         "type": "conference",
         "year": 2024,
         "conference_name": "the 41st International Conference on Machine Learning (ICML)",
-        "url": "https://openreview.net/pdf?id=eGpI9rz1Pw",
+        "pdf": "https://openreview.net/pdf?id=eGpI9rz1Pw",
+        "openreview": "https://openreview.net/forum?id=eGpI9rz1Pw",
         "conference_location": "Vienna, Austria",
         "arxiv": "https://arxiv.org/abs/2404.06013",
         "image": "img/Feel-Good Thompson.png"
@@ -68,7 +74,8 @@
         "type": "conference",
         "year": 2024,
         "conference_name": "the 12th International Conference on Learning Representations (ICLR)",
-        "url": "https://openreview.net/pdf?id=AcoXPIPh4A",
+        "pdf": "https://openreview.net/pdf?id=AcoXPIPh4A",
+        "openreview": "https://openreview.net/forum?id=AcoXPIPh4A",
         "conference_location": "Vienna, Austria",
         "arxiv": "https://arxiv.org/abs/2311.14222",
         "image": "img/Risk Bounds of Accelerated SGD.png"
