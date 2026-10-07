@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 530" role="img" aria-labelledby="title desc">
+  <title id="title">Saturation-insensitive dueling bandits figure preview</title>
+  <desc id="desc">Preference probability sigmoid with informative and uninformative regions.</desc>
+  <defs>
+    <linearGradient id="regionGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f6dddd"/>
+      <stop offset="28%" stop-color="#f5e6e6"/>
+      <stop offset="42%" stop-color="#dbe9f6"/>
+      <stop offset="58%" stop-color="#dbe9f6"/>
+      <stop offset="72%" stop-color="#f5e6e6"/>
+      <stop offset="100%" stop-color="#f6dddd"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: "Times New Roman", Times, serif; fill: #050505; }
+    .title { font-size: 34px; font-weight: 600; }
+    .axis-label { font-size: 34px; }
+    .tick { font-size: 22px; }
+    .region-blue { fill: #2f73bc; font-size: 29px; font-weight: 600; }
+    .region-red { fill: #cc5258; font-size: 29px; font-weight: 600; }
+    .axis { stroke: #1c2633; stroke-width: 3; }
+    .dash { stroke: #a9adb4; stroke-width: 2.2; stroke-dasharray: 5 9; }
+    .curve { fill: none; stroke: #1c2633; stroke-width: 6; stroke-linecap: round; }
+    .point { fill: #1c2633; }
+  </style>
+
+  <rect width="980" height="530" fill="#fff"/>
+  <text class="title" x="490" y="42" text-anchor="middle">Preference probability σ(Δ)</text>
+
+  <g transform="translate(64 76)">
+    <rect x="0" y="0" width="852" height="360" fill="url(#regionGradient)"/>
+
+    <line class="axis" x1="0" y1="360" x2="852" y2="360"/>
+    <line class="axis" x1="426" y1="0" x2="426" y2="360"/>
+    <line class="dash" x1="0" y1="180" x2="426" y2="180"/>
+
+    <path class="curve" d="M0 353 C122 345 223 322 304 270 C367 230 392 202 426 180 C461 157 489 124 552 92 C636 49 739 17 852 7"/>
+    <circle class="point" cx="426" cy="180" r="6"/>
+
+    <text class="region-red" x="44" y="110">uninformative</text>
+    <text class="region-blue" x="284" y="55">informative</text>
+    <text class="region-red" x="682" y="270">uninformative</text>
+
+    <text class="tick" x="-20" y="367">−4</text>
+    <text class="tick" x="207" y="367">−2</text>
+    <text class="tick" x="419" y="367">0</text>
+    <text class="tick" x="634" y="367">2</text>
+    <text class="tick" x="846" y="367">4</text>
+
+    <text class="tick" x="400" y="188">0.5</text>
+    <text class="tick" x="400" y="8">1</text>
+  </g>
+
+  <text class="axis-label" x="490" y="505" text-anchor="middle">Reward gap Δ = r*(x, a) − r*(x, b)</text>
+</svg>

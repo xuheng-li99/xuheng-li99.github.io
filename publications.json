@@ -20,7 +20,8 @@
         "type": "preprint",
         "year": 2026,
         "pdf": "https://arxiv.org/pdf/2609.33011",
-        "arxiv": "https://arxiv.org/abs/2609.33011"
+        "arxiv": "https://arxiv.org/abs/2609.33011",
+        "image": "img/Saturation-Insensitive Dueling Bandits.svg"
     },
     {
         "title": "Dimension-Independent Convergence of Underdamped Langevin Monte Carlo in KL Divergence",

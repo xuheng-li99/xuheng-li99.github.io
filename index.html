@@ -63,6 +63,14 @@
         <div class="section-body">
           <ul class="news-list">
             <li>
+              <span class="news-date">Sep 2026</span>
+              <div class="news-body">
+                <p>
+                  Wrapped up my internship at ByteDance Seed, where I worked on optimizers for LLM pretraining. Very grateful to all the mentors and collaborators I had the chance to work with. <strong>I am currently open to full-time research scientist / machine learning roles.</strong>
+                </p>
+              </div>
+            </li>
+            <li>
               <span class="news-date">May 2026</span>
               <div class="news-body">
                 <p>
@@ -217,7 +225,7 @@
         </li>`;
     }
 
-    fetch("publications.json?v=20261007-scholar")
+    fetch("publications.json?v=20261007-bytedance")
       .then(r => r.json())
       .then(pubs => {
         const container = document.getElementById("pub-container");
