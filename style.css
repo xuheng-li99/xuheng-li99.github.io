@@ -599,7 +599,7 @@ footer {
   }
 
   .section-title {
-    padding: 0 0 var(--sp-xs);
+    padding: 0 0 var(--sp-xs) 1.75rem;
   }
 
   .section-body {

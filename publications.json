@@ -1,15 +1,26 @@
 [
     {
-        "title": "Saturation-Insensitive Dueling Bandits with General Function Approximation",
-        "authors": "Chenggong Zhang, Xuheng Li, Qiwei Di, Weitong Zhang, Quanquan Gu",
+        "title": "Query-Efficient Rejection Sampling for Parallel Masked Diffusion",
+        "authors": "Shiyuan Zhang*, Xuheng Li*, Qiwei Di, Quanquan Gu",
         "type": "preprint",
         "year": 2026
     },
     {
-        "title": "Mirror Diffusion Models for Mixed-Type EHR Time Series Generation",
-        "authors": "Xuheng Li, Shiyuan Zhang, Melika Emami, Mohit Yadav, Jun Han, Robert E. Tillman, Quanquan Gu",
+        "title": "Understanding Off-vs On-Policy Distillation: A Tale of Distinct Training Objectives",
+        "authors": "Qiwei Di, Xuheng Li, Kaixuan Ji, Chenggong Zhang, Heyang Zhao, Quanquan Gu",
         "type": "preprint",
-        "year": "2026"
+        "year": 2026,
+        "pdf": "https://arxiv.org/pdf/2609.38666",
+        "arxiv": "https://arxiv.org/abs/2609.38666",
+        "image": "img/Understanding Off-vs On-Policy Distillation.svg"
+    },
+    {
+        "title": "Saturation-Insensitive Dueling Bandits with General Function Approximation",
+        "authors": "Chenggong Zhang, Xuheng Li, Qiwei Di, Weitong Zhang, Quanquan Gu",
+        "type": "preprint",
+        "year": 2026,
+        "pdf": "https://arxiv.org/pdf/2609.33011",
+        "arxiv": "https://arxiv.org/abs/2609.33011"
     },
     {
         "title": "Dimension-Independent Convergence of Underdamped Langevin Monte Carlo in KL Divergence",
@@ -36,18 +47,6 @@
         "image": "img/Best-of-Majority.png"
     },
     {
-        "title": "Variance-Aware Feel-Good Thompson Sampling for Contextual Bandits",
-        "authors": "Xuheng Li, Quanquan Gu",
-        "type": "conference",
-        "year": 2025,
-        "conference_name": "Advances in Neural Information Processing Systems (NeurIPS) 38",
-        "pdf": "https://openreview.net/pdf?id=eGpI9rz1Pw",
-        "openreview": "https://openreview.net/forum?id=eGpI9rz1Pw",
-        "conference_location": "San Diego, California, USA",
-        "arxiv": "https://arxiv.org/abs/2511.02123",
-        "image": "img/Variance-Aware Feel-Good.png"
-    },
-    {
         "title": "Understanding SGD with Exponential Moving Average: A Case Study in Linear Regression",
         "authors": "Xuheng Li, Quanquan Gu",
         "type": "preprint",
@@ -55,6 +54,18 @@
         "pdf": "https://arxiv.org/pdf/2502.14123",
         "arxiv": "https://arxiv.org/abs/2502.14123",
         "image": "img/Understanding SGD.png"
+    },
+    {
+        "title": "Variance-Aware Feel-Good Thompson Sampling for Contextual Bandits",
+        "authors": "Xuheng Li, Quanquan Gu",
+        "type": "conference",
+        "year": 2025,
+        "conference_name": "the 39th Conference on Neural Information Processing Systems (NeurIPS)",
+        "pdf": "https://openreview.net/pdf?id=eGpI9rz1Pw",
+        "openreview": "https://openreview.net/forum?id=eGpI9rz1Pw",
+        "conference_location": "San Diego, California, USA",
+        "arxiv": "https://arxiv.org/abs/2511.02123",
+        "image": "img/Variance-Aware Feel-Good.png"
     },
     {
         "title": "Feel-Good Thompson Sampling for Contextual Dueling Bandits",

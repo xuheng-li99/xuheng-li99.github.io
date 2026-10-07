@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Understanding Off-vs On-Policy Distillation figure preview</title>
+  <desc id="desc">Six-panel line plot comparing expert, forward KL, and reverse KL correct-response probabilities.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #000; }
+    .panel-title { font-size: 23px; }
+    .axis-label { font-size: 24px; }
+    .tick { font-size: 20px; }
+    .grid { stroke: #e4e8ed; stroke-width: 1.2; }
+    .axis { stroke: #111; stroke-width: 1.8; }
+    .guide { stroke: #9da5ad; stroke-width: 2; stroke-dasharray: 2 4; }
+    .expert { fill: none; stroke: #9aa1aa; stroke-width: 3; stroke-dasharray: 7 7; }
+    .forward { fill: none; stroke: #3f72b5; stroke-width: 3.6; }
+    .reverse { fill: none; stroke: #bc681d; stroke-width: 3.6; }
+  </style>
+
+  <rect width="900" height="560" fill="#fff"/>
+
+  <!-- Global y label -->
+  <g transform="translate(28 305) rotate(-90)">
+    <text class="axis-label" text-anchor="middle">Correct-response probability</text>
+  </g>
+
+  <!-- Panel helper: axes are 210x155, origin at bottom-left within each panel. -->
+
+  <g transform="translate(88 40)">
+    <text class="panel-title" x="105" y="-10" text-anchor="middle">(a) &#945; = 0.5, N = 10</text>
+    <line class="grid" x1="0" y1="0" x2="210" y2="0"/>
+    <line class="grid" x1="0" y1="77.5" x2="210" y2="77.5"/>
+    <line class="axis" x1="0" y1="155" x2="210" y2="155"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="155"/>
+    <line class="guide" x1="188" y1="0" x2="188" y2="155"/>
+    <path class="expert" d="M0 138 L210 0"/>
+    <path class="forward" d="M0 138 C42 124 95 105 150 84 C174 75 194 68 210 66"/>
+    <path class="reverse" d="M0 138 C52 124 102 111 145 92 C170 80 186 67 188 60 C205 36 209 20 210 0"/>
+    <text class="tick" x="-18" y="161">0.0</text>
+    <text class="tick" x="-18" y="83">0.5</text>
+    <text class="tick" x="-18" y="6">1.0</text>
+    <text class="tick" x="-10" y="183">0.1</text>
+    <text class="tick" x="92" y="183">0.5</text>
+    <text class="tick" x="202" y="183">1</text>
+    <text class="axis-label" x="105" y="220" text-anchor="middle">Expert confidence q</text>
+  </g>
+
+  <g transform="translate(338 40)">
+    <text class="panel-title" x="105" y="-10" text-anchor="middle">(b) &#945; = 0.9, N = 10</text>
+    <line class="grid" x1="0" y1="0" x2="210" y2="0"/>
+    <line class="grid" x1="0" y1="77.5" x2="210" y2="77.5"/>
+    <line class="axis" x1="0" y1="155" x2="210" y2="155"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="155"/>
+    <line class="guide" x1="154" y1="0" x2="154" y2="155"/>
+    <path class="expert" d="M0 138 L210 0"/>
+    <path class="forward" d="M0 138 C45 111 90 84 135 57 C166 39 190 22 210 14"/>
+    <path class="reverse" d="M0 138 C42 114 86 90 132 62 C165 42 192 20 210 0"/>
+    <text class="tick" x="-10" y="183">0.1</text>
+    <text class="tick" x="92" y="183">0.5</text>
+    <text class="tick" x="202" y="183">1</text>
+    <text class="axis-label" x="105" y="220" text-anchor="middle">Expert confidence q</text>
+  </g>
+
+  <g transform="translate(588 40)">
+    <text class="panel-title" x="105" y="-10" text-anchor="middle">(c) &#945; = 0.99, N = 10</text>
+    <line class="grid" x1="0" y1="0" x2="210" y2="0"/>
+    <line class="grid" x1="0" y1="77.5" x2="210" y2="77.5"/>
+    <line class="axis" x1="0" y1="155" x2="210" y2="155"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="155"/>
+    <line class="guide" x1="148" y1="0" x2="148" y2="155"/>
+    <path class="expert" d="M0 138 L210 0"/>
+    <path class="forward" d="M0 138 L210 2"/>
+    <path class="reverse" d="M0 138 L210 0"/>
+    <text class="tick" x="-10" y="183">0.1</text>
+    <text class="tick" x="92" y="183">0.5</text>
+    <text class="tick" x="202" y="183">1</text>
+    <text class="axis-label" x="105" y="220" text-anchor="middle">Expert confidence q</text>
+  </g>
+
+  <g transform="translate(88 315)">
+    <text class="panel-title" x="105" y="-10" text-anchor="middle">(d) &#945; = 0.9, N = 2</text>
+    <line class="grid" x1="0" y1="0" x2="210" y2="0"/>
+    <line class="grid" x1="0" y1="77.5" x2="210" y2="77.5"/>
+    <line class="axis" x1="0" y1="155" x2="210" y2="155"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="155"/>
+    <path class="expert" d="M0 77.5 L210 0"/>
+    <path class="forward" d="M0 77.5 C70 52 140 28 210 8"/>
+    <path class="reverse" d="M0 77.5 C65 54 140 31 210 0"/>
+    <text class="tick" x="-18" y="161">0.0</text>
+    <text class="tick" x="-18" y="83">0.5</text>
+    <text class="tick" x="-18" y="6">1.0</text>
+    <text class="tick" x="-8" y="183">0.5</text>
+    <text class="tick" x="97" y="183">0.75</text>
+    <text class="tick" x="202" y="183">1</text>
+    <text class="axis-label" x="105" y="220" text-anchor="middle">Expert confidence q</text>
+  </g>
+
+  <g transform="translate(338 315)">
+    <text class="panel-title" x="105" y="-10" text-anchor="middle">(e) &#945; = 0.9, N = 100</text>
+    <line class="grid" x1="0" y1="0" x2="210" y2="0"/>
+    <line class="grid" x1="0" y1="77.5" x2="210" y2="77.5"/>
+    <line class="axis" x1="0" y1="155" x2="210" y2="155"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="155"/>
+    <line class="guide" x1="185" y1="0" x2="185" y2="155"/>
+    <path class="expert" d="M0 155 L210 0"/>
+    <path class="forward" d="M0 155 C60 110 120 68 172 34 C190 23 202 15 210 12"/>
+    <path class="reverse" d="M0 155 C62 118 114 93 152 60 C178 38 198 18 210 0"/>
+    <text class="tick" x="-4" y="183">0.01</text>
+    <text class="tick" x="92" y="183">0.5</text>
+    <text class="tick" x="202" y="183">1</text>
+    <text class="axis-label" x="105" y="220" text-anchor="middle">Expert confidence q</text>
+  </g>
+
+  <g transform="translate(588 315)">
+    <text class="panel-title" x="105" y="-10" text-anchor="middle">(f) &#945; = 0.9, N = 1000</text>
+    <line class="grid" x1="0" y1="0" x2="210" y2="0"/>
+    <line class="grid" x1="0" y1="77.5" x2="210" y2="77.5"/>
+    <line class="axis" x1="0" y1="155" x2="210" y2="155"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="155"/>
+    <line class="guide" x1="195" y1="0" x2="195" y2="155"/>
+    <path class="expert" d="M0 155 L210 0"/>
+    <path class="forward" d="M0 155 C48 116 96 82 145 48 C172 31 195 16 210 10"/>
+    <path class="reverse" d="M0 155 C70 130 132 98 166 62 C185 42 199 19 210 0"/>
+    <text class="tick" x="-8" y="183">0.001</text>
+    <text class="tick" x="92" y="183">0.5</text>
+    <text class="tick" x="202" y="183">1</text>
+    <text class="axis-label" x="105" y="220" text-anchor="middle">Expert confidence q</text>
+  </g>
+
+  <g transform="translate(310 540)">
+    <line class="expert" x1="0" y1="0" x2="55" y2="0"/>
+    <text class="axis-label" x="70" y="8">Expert</text>
+    <line class="forward" x1="190" y1="0" x2="245" y2="0"/>
+    <text class="axis-label" x="260" y="8">Forward KL</text>
+    <line class="reverse" x1="430" y1="0" x2="485" y2="0"/>
+    <text class="axis-label" x="500" y="8">Reverse KL</text>
+  </g>
+</svg>
