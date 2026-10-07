@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 620" role="img" aria-labelledby="title desc">
+  <title id="title">Muon Learns Facts Better figure preview</title>
+  <desc id="desc">Log-scale candidate error probability curves over training steps for SGD, AdamW, and Muon.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #000; }
+    .axis-label { font-size: 34px; }
+    .tick { font-size: 24px; }
+    .legend-title { font-size: 31px; }
+    .legend { font-size: 25px; }
+    .axis { stroke: #151515; stroke-width: 2; }
+    .grid { stroke: #ececec; stroke-width: 1.3; }
+    .sgd { stroke: #3f72b5; }
+    .adam { stroke: #bd6a1d; }
+    .muon { stroke: #5a9a78; }
+    .overall { fill: none; stroke-width: 4; }
+    .subject { fill: none; stroke-width: 4; stroke-dasharray: 10 7; }
+    .relation { fill: none; stroke-width: 4; stroke-dasharray: 3 7; }
+    .sample { stroke: #333; stroke-width: 4; }
+  </style>
+
+  <rect width="980" height="620" fill="#fff"/>
+
+  <g transform="translate(126 36)">
+    <rect x="0" y="0" width="620" height="520" fill="#fff"/>
+    <line class="grid" x1="0" y1="0" x2="620" y2="0"/>
+    <line class="grid" x1="0" y1="102" x2="620" y2="102"/>
+    <line class="grid" x1="0" y1="204" x2="620" y2="204"/>
+    <line class="grid" x1="0" y1="306" x2="620" y2="306"/>
+    <line class="grid" x1="0" y1="408" x2="620" y2="408"/>
+    <line class="grid" x1="0" y1="510" x2="620" y2="510"/>
+    <line class="axis" x1="0" y1="0" x2="620" y2="0"/>
+    <line class="axis" x1="0" y1="520" x2="620" y2="520"/>
+    <line class="axis" x1="0" y1="0" x2="0" y2="520"/>
+    <line class="axis" x1="620" y1="0" x2="620" y2="520"/>
+
+    <!-- Overall components -->
+    <path class="overall sgd" d="M0 8 C70 8 116 12 150 24 C184 36 178 58 214 72 C245 86 225 126 270 160 C304 188 260 226 334 216 C372 210 326 298 414 292 C470 294 438 350 526 336 C580 328 592 346 620 340"/>
+    <path class="overall adam" d="M0 8 C36 10 62 8 76 18 C96 34 94 54 116 86 C136 120 136 132 164 150 C190 180 192 214 246 168 C264 216 310 210 356 218 C395 224 410 280 464 268 C522 258 534 300 620 286"/>
+    <path class="overall muon" d="M0 8 C28 12 42 26 50 56 C62 90 48 126 72 120 C96 114 88 172 124 160 C166 142 148 182 202 162 C250 154 236 226 286 190 C320 216 334 254 374 220 C412 250 410 320 468 282 C504 264 480 200 540 244 C584 256 594 288 620 276"/>
+
+    <!-- Subject components -->
+    <path class="subject sgd" d="M0 8 C68 10 116 14 144 34 C170 54 166 86 204 112 C242 140 246 184 284 202 C318 224 326 260 372 238 C420 254 400 322 468 300 C526 294 552 320 620 318"/>
+    <path class="subject adam" d="M0 8 C44 12 56 14 72 22 C98 44 98 80 124 122 C148 160 150 174 182 190 C214 214 226 248 266 230 C310 250 320 270 358 252 C386 288 408 306 452 294 C512 310 548 318 620 316"/>
+    <path class="subject muon" d="M0 8 C22 18 40 36 48 74 C66 118 52 150 84 138 C116 126 92 190 132 184 C170 174 150 224 204 204 C246 190 224 260 278 232 C320 260 340 298 374 286 C430 276 408 346 474 318 C526 312 548 370 620 356"/>
+
+    <!-- Relation components -->
+    <path class="relation sgd" d="M0 150 C8 514 16 466 28 376 C48 410 54 330 74 318 C110 300 126 318 156 310 C194 300 210 278 242 334 C284 360 286 386 318 372 C350 380 366 400 404 394 C442 398 452 430 492 404 C540 380 578 390 620 378"/>
+    <path class="relation adam" d="M0 262 C54 268 62 284 88 268 C120 246 126 286 162 304 C204 322 204 282 240 292 C282 276 292 310 334 294 C368 288 386 330 420 302 C474 320 500 354 536 360 C574 374 586 374 620 376"/>
+    <path class="relation muon" d="M0 80 C12 260 28 228 44 250 C64 278 74 310 102 300 C140 288 152 346 178 330 C218 294 236 312 260 280 C292 350 318 308 350 290 C394 270 408 390 444 324 C486 292 490 344 526 306 C560 300 586 306 620 282"/>
+
+    <text class="tick" x="-44" y="12">10⁰</text>
+    <text class="tick" x="-94" y="110">5×10⁻¹</text>
+    <text class="tick" x="-94" y="212">2×10⁻¹</text>
+    <text class="tick" x="-72" y="314">10⁻¹</text>
+    <text class="tick" x="-94" y="416">5×10⁻²</text>
+    <text class="tick" x="-94" y="522">2×10⁻²</text>
+
+    <text class="tick" x="-6" y="546">0</text>
+    <text class="tick" x="96" y="546">10000</text>
+    <text class="tick" x="220" y="546">20000</text>
+    <text class="tick" x="344" y="546">30000</text>
+    <text class="tick" x="468" y="546">40000</text>
+    <text class="tick" x="590" y="546">50000</text>
+  </g>
+
+  <text class="axis-label" x="436" y="610" text-anchor="middle">Training steps</text>
+  <g transform="translate(28 296) rotate(-90)">
+    <text class="axis-label" text-anchor="middle">Candidate error probability</text>
+  </g>
+
+  <g transform="translate(775 78)">
+    <text class="legend-title" x="0" y="0">Optimizer</text>
+    <line class="overall sgd" x1="-8" y1="38" x2="54" y2="38"/>
+    <text class="legend" x="68" y="47">SGD</text>
+    <line class="overall adam" x1="-8" y1="82" x2="54" y2="82"/>
+    <text class="legend" x="68" y="91">AdamW</text>
+    <line class="overall muon" x1="-8" y1="126" x2="54" y2="126"/>
+    <text class="legend" x="68" y="135">Muon</text>
+  </g>
+
+  <g transform="translate(770 355)">
+    <text class="legend-title" x="0" y="0">Error component</text>
+    <line class="sample" x1="12" y1="45" x2="72" y2="45"/>
+    <text class="legend" x="88" y="54">Overall</text>
+    <line class="sample" x1="12" y1="89" x2="72" y2="89" stroke-dasharray="10 7"/>
+    <text class="legend" x="88" y="98">Subject</text>
+    <line class="sample" x1="12" y1="133" x2="72" y2="133" stroke-dasharray="3 7"/>
+    <text class="legend" x="88" y="142">Relation</text>
+  </g>
+</svg>

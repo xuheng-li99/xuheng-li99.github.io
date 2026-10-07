@@ -1,5 +1,14 @@
 [
     {
+        "title": "Muon Learns Facts Better: Understanding the Role of Spectral Orthogonalization",
+        "authors": "Xuheng Li, Qiwei Di, Yuan Cao, Quanquan Gu",
+        "type": "preprint",
+        "year": 2026,
+        "pdf": "https://arxiv.org/pdf/2610.02798",
+        "arxiv": "https://arxiv.org/abs/2610.02798",
+        "image": "img/Muon Learns Facts Better.svg"
+    },
+    {
         "title": "Query-Efficient Rejection Sampling for Parallel Masked Diffusion",
         "authors": "Shiyuan Zhang*, Xuheng Li*, Qiwei Di, Quanquan Gu",
         "type": "preprint",
