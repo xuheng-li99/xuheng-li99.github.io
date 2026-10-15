@@ -1,5 +1,14 @@
 [
     {
+        "title": "High-Probability Regret Bounds for Feel-Good Thompson Sampling",
+        "authors": "Xuheng Li, Qingyue Zhao, Quanquan Gu",
+        "type": "preprint",
+        "year": 2026,
+        "pdf": "https://arxiv.org/pdf/2610.19513",
+        "arxiv": "https://arxiv.org/abs/2610.19513",
+        "image": "img/High-Probability Regret Bounds.png"
+    },
+    {
         "title": "Muon Learns Facts Better: Understanding the Role of Spectral Orthogonalization",
         "authors": "Xuheng Li, Qiwei Di, Yuan Cao, Quanquan Gu",
         "type": "preprint",

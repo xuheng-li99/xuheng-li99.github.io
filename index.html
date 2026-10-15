@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xuheng Li</title>
-  <link rel="stylesheet" href="style.css?v=20260817" />
+  <link rel="stylesheet" href="style.css?v=20261015-simplified" />
 </head>
 <body>
 
@@ -165,7 +165,7 @@
   <!-- ── Footer ─────────────────────────────────────────────── -->
   <footer>
     <div class="container">
-      © 2026 Xuheng Li · Last updated May 2026
+      © 2026 Xuheng Li · Last updated October 2026
     </div>
   </footer>
 
@@ -189,35 +189,27 @@
     }
 
     function buildItem(pub) {
-      const titleLink = pub.pdf
-        ? `<a href="${pub.pdf}" target="_blank">${pub.title}</a>`
-        : pub.arxiv
-          ? `<a href="${pub.arxiv}" target="_blank">${pub.title}</a>`
-          : pub.url
-          ? `<a href="${pub.url}" target="_blank">${pub.title}</a>`
-          : pub.title;
-
       const venue = buildVenue(pub);
-      const paperUrl = pub.pdf || pub.arxiv || pub.openreview || pub.url || "";
       const openreviewUrl = pub.openreview || pub.url || "";
 
       const badges = [];
       if (pub.arxiv) {
-        badges.push(`<a class="badge badge-arxiv" href="${pub.arxiv}" target="_blank">arXiv</a>`);
+        badges.push(`<a class="badge badge-arxiv" href="${pub.arxiv}" target="_blank" rel="noreferrer">arXiv</a>`);
       }
       if (openreviewUrl) {
-        badges.push(`<a class="badge badge-paper" href="${openreviewUrl}" target="_blank">openreview</a>`);
+        badges.push(`<a class="badge badge-openreview" href="${openreviewUrl}" target="_blank" rel="noreferrer">OpenReview</a>`);
       }
-
-      const thumb = pub.image
-        ? `<a class="pub-thumb pub-thumb-image" href="${paperUrl}" target="_blank" aria-label="Open paper for ${pub.title}"><img src="${pub.image}" alt="Preview image for ${pub.title}" /></a>`
-        : `<div class="pub-thumb pub-thumb-static" aria-hidden="true"><span>Paper to be released</span></div>`;
+      if (pub.pdf) {
+        badges.push(`<a class="badge badge-pdf" href="${pub.pdf}" target="_blank" rel="noreferrer">PDF</a>`);
+      }
 
       return `
         <li class="pub-item">
-          ${thumb}
           <div class="pub-content">
-            <div class="pub-title">${titleLink}</div>
+            <div class="pub-heading">
+              <div class="pub-title">${pub.title}</div>
+              <div class="pub-year">${pub.year}</div>
+            </div>
             <div class="pub-authors">${boldSelf(pub.authors)}</div>
             ${venue ? `<div class="pub-venue">${venue}</div>` : ""}
             ${badges.length ? `<div class="pub-badges">${badges.join("")}</div>` : ""}
@@ -225,7 +217,7 @@
         </li>`;
     }
 
-    fetch("publications.json?v=20261007-muon-figure")
+    fetch("publications.json?v=20261015-simplified")
       .then(r => r.json())
       .then(pubs => {
         const container = document.getElementById("pub-container");
@@ -233,6 +225,12 @@
           <ul class="pub-list">
             ${pubs.map(buildItem).join("")}
           </ul>`;
+
+        if (window.location.hash === "#publications") {
+          requestAnimationFrame(() => {
+            document.getElementById("publications").scrollIntoView();
+          });
+        }
       })
       .catch(() => {
         document.getElementById("pub-container").innerHTML =
