@@ -71,7 +71,7 @@
         "image": "img/Dimension-Independent.png"
     },
     {
-        "title": "Best-of-Majority: Minimax-Optimal Strategy for Pass@$k$ Inference Scaling",
+        "title": "Best-of-Majority: Minimax-Optimal Strategy for Pass@<em>k</em> Inference Scaling",
         "authors": "Qiwei Di*, Kaixuan Ji*, Xuheng Li*, Heyang Zhao, Quanquan Gu",
         "type": "conference",
         "research_area": "rl-llm",

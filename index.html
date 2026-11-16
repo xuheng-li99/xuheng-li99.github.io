@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xuheng Li</title>
   <link rel="stylesheet" href="style.css?v=20261116-wider-content" />
-  <link rel="preload" href="publications.json?v=20261116-research-groups" as="fetch" />
+  <link rel="preload" href="publications.json?v=20261116-pass-k" as="fetch" />
 </head>
 <body>
 
@@ -227,7 +227,7 @@
         </section>`;
     }
 
-    fetch("publications.json?v=20261116-research-groups")
+    fetch("publications.json?v=20261116-pass-k")
       .then(r => r.json())
       .then(pubs => {
         const container = document.getElementById("pub-container");
