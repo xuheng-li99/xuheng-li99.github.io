@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xuheng Li</title>
-  <link rel="stylesheet" href="style.css?v=20261015-simplified" />
+  <link rel="stylesheet" href="style.css?v=20261116-research-groups" />
+  <link rel="preload" href="publications.json?v=20261116-research-groups" as="fetch" />
 </head>
 <body>
 
@@ -15,7 +16,6 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
         <li><a href="#research">Research</a></li>
       </ul>
     </div>
@@ -101,9 +101,9 @@
         </div>
       </section>
 
-      <!-- Publications -->
-      <section id="publications">
-        <h2 class="section-title"><span class="section-emoji" aria-hidden="true">📄</span>Publications</h2>
+      <!-- Research & Publications -->
+      <section id="research">
+        <h2 class="section-title"><span id="publications" class="anchor-alias" aria-hidden="true"></span><span class="section-emoji" aria-hidden="true">🔬</span>Research &amp; Publications</h2>
         <div class="section-body">
           <p style="font-size:0.9rem; line-height:1.25; color:#555; margin-bottom:1.4rem;">
             * denotes equal contribution.
@@ -111,37 +111,6 @@
 
           <div id="pub-container">
             <p style="color:#888;">Loading publications…</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Research -->
-      <section id="research">
-        <h2 class="section-title"><span class="section-emoji" aria-hidden="true">🔬</span>Research</h2>
-        <div class="section-body">
-          <div class="research-grid">
-
-            <div class="research-card">
-              <h3>Optimization in High Dimensions</h3>
-              <p>
-                Modern machine learning models are trained on high-dimensional loss landscapes whose behavior is far from well understood. I study how stochastic optimization algorithms interact with the intrinsic low-dimensional structure of data.
-              </p>
-            </div>
-
-            <div class="research-card">
-              <h3>Sampling and Diffusion Models</h3>
-              <p>
-                Score-based generative models and Markov chain Monte Carlo samplers share a deep connection through stochastic differential equations. I work on the theoretical foundations of sampling algorithms, and on applying diffusion models to structured domains such as mixed-type electronic health records.
-              </p>
-            </div>
-
-            <div class="research-card">
-              <h3>RL in Post-Training and Reasoning of LLMs</h3>
-              <p>
-                Reinforcement learning from human feedback and inference-time scaling are central to aligning and eliciting reasoning in large language models. I develop principled algorithms and statistical frameworks for contextual bandits and inference strategies.
-              </p>
-            </div>
-
           </div>
         </div>
       </section>
@@ -217,18 +186,56 @@
         </li>`;
     }
 
-    fetch("publications.json?v=20261116-scholar-update")
+    const researchAreas = [
+      {
+        id: "optimization",
+        number: "01",
+        title: "Optimization in High Dimensions",
+        description: "Modern machine learning models are trained on high-dimensional loss landscapes whose behavior is far from well understood. I study how stochastic optimization algorithms interact with the intrinsic low-dimensional structure of data."
+      },
+      {
+        id: "sampling",
+        number: "02",
+        title: "Sampling and Diffusion Models",
+        description: "Score-based generative models and Markov chain Monte Carlo samplers share a deep connection through stochastic differential equations. I work on the theoretical foundations of sampling algorithms, and on applying diffusion models to structured domains such as mixed-type electronic health records."
+      },
+      {
+        id: "rl-llm",
+        number: "03",
+        title: "RL in Post-Training and Reasoning of LLMs",
+        description: "Reinforcement learning from human feedback and inference-time scaling are central to aligning and eliciting reasoning in large language models. I develop principled algorithms and statistical frameworks for contextual bandits and inference strategies."
+      }
+    ];
+
+    function buildResearchArea(area, pubs) {
+      const areaPubs = pubs.filter(pub => pub.research_area === area.id);
+      return `
+        <section class="research-theme" aria-labelledby="research-${area.id}">
+          <div class="research-theme-heading">
+            <span class="research-theme-number">${area.number}</span>
+            <h3 id="research-${area.id}">${area.title}</h3>
+            <p>${area.description}</p>
+          </div>
+          <div class="research-theme-papers">
+            <p class="key-papers-label">Key papers</p>
+            <ul class="pub-list">
+              ${areaPubs.map(buildItem).join("")}
+            </ul>
+          </div>
+        </section>`;
+    }
+
+    fetch("publications.json?v=20261116-research-groups")
       .then(r => r.json())
       .then(pubs => {
         const container = document.getElementById("pub-container");
-        container.innerHTML = `
-          <ul class="pub-list">
-            ${pubs.map(buildItem).join("")}
-          </ul>`;
+        container.innerHTML = researchAreas
+          .map(area => buildResearchArea(area, pubs))
+          .join("");
 
-        if (window.location.hash === "#publications") {
+        if (["#publications", "#research"].includes(window.location.hash)) {
           requestAnimationFrame(() => {
-            document.getElementById("publications").scrollIntoView();
+            document.getElementById("research").scrollIntoView();
           });
         }
       })
