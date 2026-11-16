@@ -148,8 +148,8 @@ section {
 #research,
 #more-about-me {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  column-gap: 1.6rem;
+  grid-template-columns: 150px minmax(0, 1fr);
+  column-gap: 1.4rem;
   align-items: start;
 }
 
@@ -423,8 +423,6 @@ section {
 .pub-item:hover,
 .pub-item:focus-within {
   transform: translateY(-4px);
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
   background: #f7fafc;
   box-shadow: 0 8px 20px rgba(44, 61, 78, 0.1);
 }
@@ -504,8 +502,8 @@ section {
    ===================================================== */
 .research-theme {
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  column-gap: 1.8rem;
+  grid-template-columns: 200px minmax(0, 1fr);
+  column-gap: 1.5rem;
   align-items: start;
   margin-bottom: 3rem;
   scroll-margin-top: calc(var(--nav-height) + 16px);
