@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xuheng Li</title>
-  <link rel="stylesheet" href="style.css?v=20261116-research-columns" />
+  <link rel="stylesheet" href="style.css?v=20261116-research-order" />
   <link rel="preload" href="publications.json?v=20261116-research-groups" as="fetch" />
 </head>
 <body>
@@ -188,22 +188,22 @@
 
     const researchAreas = [
       {
-        id: "optimization",
+        id: "rl-llm",
         number: "01",
+        title: "RL in Post-Training and Reasoning of LLMs",
+        description: "Reinforcement learning from human feedback and inference-time scaling are central to aligning and eliciting reasoning in large language models. I develop principled algorithms and statistical frameworks for contextual bandits and inference strategies."
+      },
+      {
+        id: "optimization",
+        number: "02",
         title: "Optimization in High Dimensions",
         description: "Modern machine learning models are trained on high-dimensional loss landscapes whose behavior is far from well understood. I study how stochastic optimization algorithms interact with the intrinsic low-dimensional structure of data."
       },
       {
         id: "sampling",
-        number: "02",
+        number: "03",
         title: "Sampling and Diffusion Models",
         description: "Score-based generative models and Markov chain Monte Carlo samplers share a deep connection through stochastic differential equations. I work on the theoretical foundations of sampling algorithms, and on applying diffusion models to structured domains such as mixed-type electronic health records."
-      },
-      {
-        id: "rl-llm",
-        number: "03",
-        title: "RL in Post-Training and Reasoning of LLMs",
-        description: "Reinforcement learning from human feedback and inference-time scaling are central to aligning and eliciting reasoning in large language models. I develop principled algorithms and statistical frameworks for contextual bandits and inference strategies."
       }
     ];
 

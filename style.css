@@ -502,10 +502,6 @@ section {
 /* =====================================================
    Research & Publications
    ===================================================== */
-#research > .section-title {
-  font-size: 1.05rem;
-}
-
 .research-theme {
   display: grid;
   grid-template-columns: 230px minmax(0, 1fr);
