@@ -1,7 +1,7 @@
 [
     {
         "title": "Settling the Burn-in Gap: Sharp Risk Bounds for Tail-Averaged SGD in Linear Regression",
-        "authors": "Qingyue Zhao, Xuheng Li, Quanquan Gu",
+        "authors": "Qingyue Zhao*, Xuheng Li*, Quanquan Gu",
         "type": "preprint",
         "research_area": "optimization",
         "year": 2026,

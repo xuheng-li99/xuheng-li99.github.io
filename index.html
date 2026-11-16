@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xuheng Li</title>
   <link rel="stylesheet" href="style.css?v=20261116-wider-content" />
-  <link rel="preload" href="publications.json?v=20261116-pass-k" as="fetch" />
+  <link rel="preload" href="publications.json?v=20261116-cofirst-order" as="fetch" />
 </head>
 <body>
 
@@ -188,16 +188,16 @@
 
     const researchAreas = [
       {
-        id: "rl-llm",
-        number: "01",
-        title: "RL in Post-Training and Reasoning of LLMs",
-        description: "Reinforcement learning from human feedback and inference-time scaling are central to aligning and eliciting reasoning in large language models. I develop principled algorithms and statistical frameworks for contextual bandits and inference strategies."
-      },
-      {
         id: "optimization",
-        number: "02",
+        number: "01",
         title: "Optimization in High Dimensions",
         description: "Modern machine learning models are trained on high-dimensional loss landscapes whose behavior is far from well understood. I study how stochastic optimization algorithms interact with the intrinsic low-dimensional structure of data."
+      },
+      {
+        id: "rl-llm",
+        number: "02",
+        title: "RL in Post-Training and Reasoning of LLMs",
+        description: "Reinforcement learning from human feedback and inference-time scaling are central to aligning and eliciting reasoning in large language models. I develop principled algorithms and statistical frameworks for contextual bandits and inference strategies."
       },
       {
         id: "sampling",
@@ -227,7 +227,7 @@
         </section>`;
     }
 
-    fetch("publications.json?v=20261116-pass-k")
+    fetch("publications.json?v=20261116-cofirst-order")
       .then(r => r.json())
       .then(pubs => {
         const container = document.getElementById("pub-container");
