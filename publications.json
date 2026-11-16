@@ -1,5 +1,13 @@
 [
     {
+        "title": "Settling the Burn-in Gap: Sharp Risk Bounds for Tail-Averaged SGD in Linear Regression",
+        "authors": "Qingyue Zhao, Xuheng Li, Quanquan Gu",
+        "type": "preprint",
+        "year": 2026,
+        "pdf": "https://arxiv.org/pdf/2611.13383",
+        "arxiv": "https://arxiv.org/abs/2611.13383"
+    },
+    {
         "title": "High-Probability Regret Bounds for Feel-Good Thompson Sampling",
         "authors": "Xuheng Li, Qingyue Zhao, Quanquan Gu",
         "type": "preprint",
@@ -21,7 +29,9 @@
         "title": "Query-Efficient Rejection Sampling for Parallel Masked Diffusion",
         "authors": "Shiyuan Zhang*, Xuheng Li*, Qiwei Di, Quanquan Gu",
         "type": "preprint",
-        "year": 2026
+        "year": 2026,
+        "pdf": "https://arxiv.org/pdf/2610.22238",
+        "arxiv": "https://arxiv.org/abs/2610.22238"
     },
     {
         "title": "Understanding Off-vs On-Policy Distillation: A Tale of Distinct Training Objectives",
@@ -92,8 +102,8 @@
         "type": "conference",
         "year": 2024,
         "conference_name": "the 41st International Conference on Machine Learning (ICML)",
-        "pdf": "https://openreview.net/pdf?id=eGpI9rz1Pw",
-        "openreview": "https://openreview.net/forum?id=eGpI9rz1Pw",
+        "pdf": "https://openreview.net/pdf?id=l9ga3iQuHt",
+        "openreview": "https://openreview.net/forum?id=l9ga3iQuHt",
         "conference_location": "Vienna, Austria",
         "arxiv": "https://arxiv.org/abs/2404.06013",
         "image": "img/Feel-Good Thompson.png"
