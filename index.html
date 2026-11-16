@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xuheng Li</title>
-  <link rel="stylesheet" href="style.css?v=20261116-research-groups" />
+  <link rel="stylesheet" href="style.css?v=20261116-research-columns" />
   <link rel="preload" href="publications.json?v=20261116-research-groups" as="fetch" />
 </head>
 <body>
@@ -214,13 +214,15 @@
           <div class="research-theme-heading">
             <span class="research-theme-number">${area.number}</span>
             <h3 id="research-${area.id}">${area.title}</h3>
-            <p>${area.description}</p>
           </div>
-          <div class="research-theme-papers">
-            <p class="key-papers-label">Key papers</p>
-            <ul class="pub-list">
-              ${areaPubs.map(buildItem).join("")}
-            </ul>
+          <div class="research-theme-main">
+            <p class="research-theme-description">${area.description}</p>
+            <div class="research-theme-papers">
+              <p class="key-papers-label">Key papers</p>
+              <ul class="pub-list">
+                ${areaPubs.map(buildItem).join("")}
+              </ul>
+            </div>
           </div>
         </section>`;
     }
